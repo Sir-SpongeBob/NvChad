@@ -25,7 +25,20 @@
 
 ## Install
 
-```git clone [https://github.com/Sir-SpongeBob/NvChad/NvChad](https://github.com/Sir-SpongeBob/NvChad/NvChad) %USERPROFILE%\AppData\Local\nvim --depth 1 && nvim```
+- on Linux and Mac
+```sh
+git clone https://github.com/Sir-SpongeBob/NvChad "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+```
+
+- on Windows (cmd)
+```
+git clone https://github.com/Sir-SpongeBob/NvChad %userprofile%\AppData\Local\nvim\ 
+```
+
+- on Windows (powershell)
+```
+git clone https://github.com/Sir-SpongeBob/NvChad $env:USERPROFILE\AppData\Local\nvim\ 
+```
 
 ## Showcase
 
