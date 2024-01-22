@@ -23,6 +23,10 @@
 
   </div>
 
+## Install
+
+```git clone [https://github.com/Sir-SpongeBob/NvChad/NvChad](https://github.com/Sir-SpongeBob/NvChad/NvChad) %USERPROFILE%\AppData\Local\nvim --depth 1 && nvim```
+
 ## Showcase
 
 <img src="https://nvchad.com/features/nvdash.webp">
