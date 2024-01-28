@@ -3,6 +3,7 @@ local M = {}
 M.treesitter = {
   ensure_installed = {
     "vim",
+    "vimdoc",
     "lua",
     "html",
     "css",
@@ -12,6 +13,7 @@ M.treesitter = {
     "c",
     "markdown",
     "markdown_inline",
+    "python",
   },
   indent = {
     enable = true,
@@ -37,6 +39,9 @@ M.mason = {
     -- c/cpp stuff
     "clangd",
     "clang-format",
+
+    -- others
+    "pyright",
   },
 }
 
@@ -54,6 +59,35 @@ M.nvimtree = {
       },
     },
   },
+}
+
+M.lualine = {
+  options = {
+    icons_enabled = true,
+    theme = 'auto',
+    component_separators = '|',
+    section_separators = '',
+  },
+
+  sections = {
+    lualine_c = {
+      {
+        'filename',
+        newfile_status = true,
+        path = 4,
+      }
+    }
+  },
+}
+
+M.gitsigns = {
+  signs = {
+    add = { text = "+" },
+    change = { text = '~' },
+    delete = { text = '_' },
+    topdelete = { text = '‾' },
+    changedelete = { text = '~' },
+  }
 }
 
 return M
