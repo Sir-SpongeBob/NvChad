@@ -61,25 +61,6 @@ M.nvimtree = {
   },
 }
 
-M.lualine = {
-  options = {
-    icons_enabled = true,
-    theme = 'auto',
-    component_separators = '|',
-    section_separators = '',
-  },
-
-  sections = {
-    lualine_c = {
-      {
-        'filename',
-        newfile_status = true,
-        path = 4,
-      }
-    }
-  },
-}
-
 M.gitsigns = {
   signs = {
     add = { text = "+" },
