@@ -21,7 +21,6 @@ opt.whichwrap = opt.whichwrap - "<>[]hl"
 -- Enable show intro, mode, abbr
 opt.shortmess = opt.shortmess - "I"
 opt.shortmess = opt.shortmess - "F"
-opt.shortmess:append "a"
 
 -- Neovide config
 if g.neovide then
