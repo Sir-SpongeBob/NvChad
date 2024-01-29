@@ -1,20 +1,7 @@
 local M = {}
 
 M.treesitter = {
-  ensure_installed = {
-    "vim",
-    "vimdoc",
-    "lua",
-    "html",
-    "css",
-    "javascript",
-    "typescript",
-    "tsx",
-    "c",
-    "markdown",
-    "markdown_inline",
-    "python",
-  },
+  ensure_installed = { "vim", "lua", "html", "css", "javascript", "typescript", "tsx", "c", "markdown", "markdown_inline", "python", "vimdoc", "bash", "awk", "git_config", "git_rebase", "gitattributes", "gitcommit", "gitignore", "ini", "json", "passwd", "xml", "yaml", },
   indent = {
     enable = true,
     -- disable = {
@@ -23,6 +10,8 @@ M.treesitter = {
   },
 }
 
+-- To be switched to use other tool
+-- https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim
 M.mason = {
   ensure_installed = {
     -- lua stuff
@@ -40,8 +29,11 @@ M.mason = {
     "clangd",
     "clang-format",
 
-    -- others
+    -- custom
     "pyright",
+    "bash-language-server",
+    "powershell-editor-services",
+    "vim-language-server",
   },
 }
 
