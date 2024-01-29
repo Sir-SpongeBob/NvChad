@@ -1,5 +1,7 @@
 local overrides = require("custom.configs.overrides")
 
+-- All plugins have lazy=true by default,to load a plugin on startup just lazy=false
+-- For a plugin to be loaded, you will need to set either `ft`, `cmd`, `keys`, `event`, or set `lazy = false`
 ---@type NvPluginSpec[]
 local plugins = {
 
@@ -52,12 +54,8 @@ local plugins = {
     end,
   },
 
-  -- All NvChad plugins are lazy-loaded by default
-  -- For a plugin to be loaded, you will need to set either `ft`, `cmd`, `keys`, `event`, or set `lazy = false`
-  -- If you want a plugin to load on startup, add `lazy = false` to a plugin spec, for example
   {
     "mg979/vim-visual-multi",
-    lazy = true,
     branch = "master",
   },
 

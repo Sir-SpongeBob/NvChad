@@ -8,6 +8,7 @@ local options = {
   numberwidth = 4,
   swapfile = false,
   scrolloff = 15,
+  linebreak = true,
 }
 
 for key, value in pairs(options) do
