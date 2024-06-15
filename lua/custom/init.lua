@@ -25,8 +25,14 @@ opt.shortmess = opt.shortmess - "F"
 -- Neovide config
 if g.neovide then
   opt.guifont="CaskaydiaCove Nerd Font:h11"
-  g.neovide_refresh_rate = 165
-  g.neovide_cursor_vfx_mode = "pixiedust"
+  g.neovide_refresh_rate = 180
+  g.neovide_remember_window_size = true
+  g.neovide_scroll_animation_length = 0
+  g.neovide_cursor_animation_length = 0
+  g.neovide_cursor_trail_size = 0
+  g.neovide_cursor_animate_in_insert_mode = false
+  g.neovide_cursor_animate_command_line = false
+  g.neovide_cursor_vfx_mode = ""
 end
 
 ------ autocmds ------
